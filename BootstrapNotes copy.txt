@@ -1,0 +1,17 @@
+﻿Bootstrap
+
+Bootstrap is a web app development toolkit. It is the most popular CSS framework directed at responsive, mobile-first front-end web development. In plain terms, it is a giant collection of useful, reusable bits of code written in HTL, CSS, and JS. It is a front-end development framework. 
+- It contains HTML, CSS, and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components. 
+
+The primary purpose of adding it to a web project is to apply Bootstrap’s choices of color, size, font, and layout to that project. So, simply, the primary factor is whether the developers like the changes applied. Once added to a project, Bootstrap provides basic style definitions for all HTML elements. The result is a uniform appearance for tables, prose, and form elements across all different web browsers. 
+
+- Some components it comes with include:
+	- Container class
+		- Provides margins, padding, alignments, and more to HTML elements 
+	- Navigation bar
+	- Dropdowns
+	- Progress bars
+	- Thumbnails
+	- Grid systems
+	- Image carousels
+	- Buttons
