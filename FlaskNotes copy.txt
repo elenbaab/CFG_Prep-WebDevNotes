@@ -22,21 +22,21 @@ Flask’s relation to other frameworks:
 	- Note: These frameworks are very different, but just to get a sense of their uses in different contexts:
 		- If we consider the MERN Stack:
 			- Express ~ Flask
-			- NodeJS    ~ Python
-			- React      ~ Jinja
+			- NodeJS  ~ Python
+			- React   ~ Jinja
 
 Flask’s Components (Main 4)
 	1) Werkzeug: Instantiate objects for requests and responses, and for utility functions
-	2) Jinja(2): Template engine for the Python programming language; creates HTML, XML, or other markup formats that are returned to the server via an HTTP request
-		- Example:
-			<html>
-				<head>
-					<title>{{ title }}</title>
-				</head>
-				<body>
-					<h1>Hello {{ username }}</h1>
-				</body>
-			</html>
+	2) Jinja(2): Template engine for the Python programming language; creates HTML, XML, or other markup formats that are returned to 		     the server via an HTTP request
+			- Example:
+				<html>
+					<head>
+						<title>{{ title }}</title>
+					</head>
+					<body>
+						<h1>Hello {{ username }}</h1>
+					</body>
+				</html>
 	3) MarkupSafe: String-handling library for Python
 	4) ItsDangerous: Safe data serialization library for Python. 
 
@@ -57,32 +57,25 @@ How to run a Flask application:
 	3) Run with Python filename.py 
 		- This will open a local server.
 
-
 APIs With Flask
 
 Flask is great for working with APIs.
 
 	REST(ful) APIs
-		- An application programming interface (API or Web API) that conforms to the constraints of the REST architectural style and allows for interactions with RESTful web services. 
+		- An application programming interface (API or Web API) that conforms to the constraints of the REST architectural style 		  and allows for interactions with RESTful web services. 
 		- REST = Representational State Transfer
-			- REST is a set of guidelines that can be implemented as needed, making REST APIs faster and more lightweight than some other prescribed API protocol, with increased scalability.
+			- REST is a set of guidelines that can be implemented as needed, making REST APIs faster and more lightweight than 			  some other prescribed API protocol, with increased scalability.
 
-		- When a request is made via a RESTful API, it transfers a representation of the state of the resource to the requestor. This representation, or information, is delivered in one of the 		    several formats via HTTP: JSON (Javascript Object Notation - the most popular, as it is language agnostic as well as readable by humans and machines), HTML, XLT, Python, PHP, or Plain 		    Text. 
+		- When a request is made via a RESTful API, it transfers a representation of the state of the resource to the requestor. 		  This representation, or information, is delivered in one of the several formats via HTTP: JSON (Javascript Object 			  Notation - the most popular, as it is language agnostic as well as readable by humans and machines), HTML, XLT, Python, 		  PHP, or Plain Text. 
 
 		Qualifications for an API being Considered RESTful
  			1) A client-server architecture, made up of clients, servers, and resources, with requests managed through HTTP
-			2) Stateless client-server communication, meaning no client information is stored in between get requests, and that each request is separate and unconnected
+			2) Stateless client-server communication, meaning no client information is stored in between get requests, and that 			   each request is separate and unconnected
 			3) Cacheable data that streamlines client-server interactions
 			4) A uniform interface between components so that information is transferred in a standard form. This requires that:
 				a) Resources requested are identifiable, and are seperate from the representations sent to the client
-				b) Resources can be manipulated by the client via the representation that they receive, because the representation contains enough information to do so 
-				c) Self-descriptive messages returned to the client have enough information to describe how the client should process it
-				d) Hypertext/Hypermedia is available, meaning that after accessing a resource, the client should be able to use hyperlinks to find all other currently available actions that they 				      can take.
-			5) A layered system that organizes each type of server (those are responsible for security, load-balancing, etc.) involved in the retrieval of requested information into hierarchies, 			      invisible to the client.    
-			6) (OPTIONAL) Code-on-Demand: The ability to send executable code from the server to the client when requested, extending client functionality.    
-		
-
-
-
-
-
+				b) Resources can be manipulated by the client via the representation that they receive, because the 					   representation contains enough information to do so 
+				c) Self-descriptive messages returned to the client have enough information to describe how the client 					   should process it
+				d) Hypertext/Hypermedia is available, meaning that after accessing a resource, the client should be able to 				   use hyperlinks to find all other currently available actions that they can take.
+			5) A layered system that organizes each type of server (those are responsible for security, load-balancing, etc.) 			   involved in the retrieval of requested information into hierarchies, invisible to the client.    
+			6) (OPTIONAL) Code-on-Demand: The ability to send executable code from the server to the client when requested, 			   extending client functionality.    
