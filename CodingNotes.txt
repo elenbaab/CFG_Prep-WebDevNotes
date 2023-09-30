@@ -1,0 +1,7 @@
+Things to make note of when using Flask and Bootstrap that I found:
+
+- When using Bootstrap, you can either download and host Bootstrap itself, or use Bootstrap CDN, which I found to be a bit faster.
+- If you are using Bootstrap and want to update the CSS of a particular attirbute, you have to be very specific for the path (Bootstrap is very sepcific, and we want to override this). You have to place any .css sheets inside of a "static" folder.
+- Pages traditionally go into a "templates" folder. Flask recognizes this name, and so you don't have to specify a certain path in your apppy file.  
+
+- IMPORTANT: If developing with Chrome, the cache causes a lot problems with updating the css. You have to clear your cache everytime you make a change to the styles if you want to see it reflected. To fix this, go to: Chrome Dev Tools -> Settings -> (Check) Disable Cache (While DevTools is Open).
